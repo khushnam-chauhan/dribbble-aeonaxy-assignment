@@ -1,0 +1,153 @@
+.SignupForm {
+  display: flex;
+  height: 100vh;
+  background-color: #fec78f;
+}
+
+.leftContainer {
+  width: 40%;
+  padding: 1.5rem;
+}
+
+.leftContainer h1 {
+  text-align: left;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #816f2d;
+  font-family: "Comic Sans MS", cursive;
+}
+
+.sub-heading {
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: #65561e;
+}
+
+.illustration-credit {
+  text-align: left;
+  color: #65561e;
+  margin-top: 1rem;
+}
+
+.illustration-credit p {
+  font-size: 1rem;
+}
+
+.illustration-credit span {
+  text-decoration: underline;
+  color: black;
+}
+
+.rightContainer {
+  background-color: whitesmoke;
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+  padding: 1.5rem;
+}
+
+.sign-in-Link {
+  text-align: right;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+span {
+  color: rgb(53, 63, 240);
+  cursor: pointer;
+}
+
+.rightContainer h2 {
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.username-taken {
+  color: #ff6347;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.terms-condition {
+  margin-bottom: 1rem;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox input {
+  flex: 0.1;
+}
+
+.checkbox label {
+  flex: 1;
+}
+
+.create-acc-btn {
+  background-color: #ff6347;
+  color: #fff;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 100%;
+  font-weight: bold;
+}
+
+.create-acc-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.captcha-info {
+  display: flex;
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Media Query for mobile */
+@media (max-width: 768px) {
+  .SignupForm {
+      flex-direction: column;
+      height: auto; 
+  }
+
+  .leftContainer,
+  .rightContainer {
+      width: 100%;
+  }
+
+  .rightContainer {
+      padding: 1rem; 
+  }
+
+  .form-group input {
+      width: 100%;
+  }
+
+  .create-acc-btn {
+      width: 100%;
+  }
+}

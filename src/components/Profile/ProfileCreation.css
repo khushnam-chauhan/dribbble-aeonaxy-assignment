@@ -1,0 +1,224 @@
+* {
+  overflow-x: hidden;
+}
+
+.profile-creation-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+  height: 100vh;
+  width: 100vw;
+}
+
+.creation-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  height: 70vh;
+  width: 700px;
+  align-items: start;
+  flex-direction: column;
+}
+
+.heading {
+  text-align: left !important;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #cc7095;
+  font-family: "Comic Sans MS", cursive;
+}
+
+.header {
+  color: #1d1c2f;
+  font-size: 29px;
+  line-height: 50px;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.header p {
+  font-size: 20px;
+  text-align: start;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.avatar-hero {
+  display: flex;
+  align-items: center;
+}
+
+.avatar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.avatar-preview {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.avatar-section h3 {
+  text-align: start;
+  padding-bottom: 40px;
+  font-size: 22px;
+}
+
+.location-section {
+  padding-bottom: 20px;
+}
+
+.location-section h3 {
+  padding-bottom: 20px;
+  font-size: 22px;
+}
+
+.avatar-placeholder {
+  width: 160px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  color: #fff;
+}
+
+.avatar-placeholder span {
+  color: rgb(146, 138, 138);
+}
+
+.default {
+  cursor: pointer;
+}
+
+.avatar-options {
+  display: flex;
+  justify-content: center;
+}
+
+.avatar-options button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.avatar-options button img {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.avatar-options button:focus {
+  outline: none;
+}
+
+.avatar-upload-label {
+  cursor: pointer;
+  color: #ff6347;
+}
+
+input[type='text'],
+input[type='file'] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+  width: 100%;
+  font-weight: bold;
+  height: 25px;
+  max-width: 350px;
+}
+
+.next-button {
+  background-color: #ea4b8a;
+  color: white;
+  border: none;
+  padding: 1rem 5.4rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.next-button:disabled {
+  background-color: rgb(174, 172, 172);
+  cursor: not-allowed;
+}
+
+.return-info {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  * {
+    overflow-x: hidden;
+  }
+
+  .profile-creation-container {
+    padding: 1rem;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  form {
+    width: 100%;
+    height: auto;
+  }
+
+  .header {
+    font-size: 20px;
+    line-height: 1.5;
+    padding-bottom: 10px;
+  }
+
+  .header p {
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+  }
+
+  .avatar-section {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .avatar-section h3,
+  .location-section h3 {
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+
+  .avatar-placeholder {
+    width: 100px;
+    height: 100px;
+    font-size: 3rem;
+  }
+
+  .avatar-options button img {
+    width: 70px;
+    height: 70px;
+  }
+
+  input[type='text'],
+  input[type='file'] {
+    max-width: 100%;
+  }
+
+  .next-button {
+    padding: 0.8rem 2rem;
+  }
+}

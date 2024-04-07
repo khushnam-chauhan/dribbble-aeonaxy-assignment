@@ -1,0 +1,179 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: #ff6699;
+}
+
+.heading h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.heading p {
+    font-size: 34px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.hero-section h2 {
+    color: #333;
+    font-size: 55px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    color: #666;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.option-box {
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.option-image {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.option-box label {
+    line-height: 30px;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.option-box input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.option-box input[type="checkbox"]:checked {
+    background-color: #ff6699;
+}
+
+.option-box p {
+    color: #666;
+    font-size: 14px;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto 10px auto;
+}
+
+.finish-btn {
+    background-color: #ff6699;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+    width: 20%;
+    box-sizing: border-box;
+}
+
+.finish-btn:hover {
+    background-color: #ff3385;
+}
+
+.finish-btn:disabled {
+    background-color: #bcb0b5;
+}
+
+/* mobile responsive */
+@media (max-width: 768px) {
+  .heading {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .heading h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .heading p {
+    font-size: 30px;
+    margin-left: 0;
+  }
+
+  .hero-section h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+
+  .hero-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .options {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .option-box {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .option-box p {
+    font-size: 12px;
+  }
+
+  .finish-btn {
+    padding: 10px;
+    margin-top: 10px;
+  }
+}
